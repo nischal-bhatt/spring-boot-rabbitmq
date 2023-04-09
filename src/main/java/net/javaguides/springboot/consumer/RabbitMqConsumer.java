@@ -11,7 +11,7 @@ public class RabbitMqConsumer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RabbitMqConsumer.class);
 
-    @RabbitListener(queues = {"${rabbitmq.queue.name}"})
+   // @RabbitListener(queues = {"${rabbitmq.queue.name}"})
     public void consume(String message)
     {
         LOGGER.info(message + " read ");
